@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+</head>
+<body onload="loader()">
+
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+
+    <!-- navbar starts here  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="color:#5f6368!important;" href="./index.html">Our Bank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./customer.html">Transactions</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- here content starts here -->
+    <div class="img" style="background-image: url('https://internationalbanker.com/wp-content/uploads/2020/10/Legacy-Banking-Systems.png'); height: 568px; width: 1365px; overflow-x: hidden;">
+    <div class="container-fluid hero-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+          <h1 style="color: rgb(22, 22, 21); position: relative; left:410px; margin-top: 60px; padding-top: 90px; font-size: 52px; font-weight: 800; font-style: italic; font-family: 'Times New Roman', Times, serif; letter-spacing: 2px;word-spacing: 5px;">Bank Balance Tracker</h1>
+          <p style="position: relative; left:400px; font-size: 22px; letter-spacing: 1px;word-spacing: 4px; font-style: oblique; font-family: Arial, Helvetica, sans-serif; font-weight: 600;" class="lead muted">Best way to transfer money anytime anywhere.</p>
+          <p style="color:rgb(22, 22, 21); position: relative; left:380px; font-size: 43px; letter-spacing: 1px;font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 800;">Welcome</p>
+          <br>
+          <a class="get-started" href="/customer.html" style="position: relative;left:380px; color: rgb(60, 57, 63);font-size: 32px; font-weight: 800; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; letter-spacing: 2px;word-spacing: 5px;">Get Started</a>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+        </div>
+      </div>
+    </div>
+    <!-- here content ends here -->
+
+
+
+
+    <!-- footer starts here -->
+    <footer>
+      <br><br>
+      <hr>
+      <div class="row text-center">
+        <div class="col-md-6" style="position: relative;left: -230px; top:-12px;">
+            <a>Created By: Vaibhav Jain</a>
+            <div>#NOV2021</div>
+            <div>GRIP</div>  
+        </div>
+        <div class="col-md-6 text-center">
+            <ul class="social-icons">
+              <a target="_blank" class="github" href="https://github.com/Vaibhav2822"><i class="fab fa-github fa-2x" style="position: relative; left: 280px; padding-right: 55px; color: black;"></i></a>
+              <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/vaibhav-jain-4613a9176/"><i class="fab fa-linkedin fa-2x" style="position: relative; left: 230px; padding-left: 20px; color: black;"></i></a>   
+            </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+    
+</body>
+</html>
